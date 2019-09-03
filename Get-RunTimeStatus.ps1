@@ -60,5 +60,5 @@ foreach($Subscription in $Subscriptions)
     }
     
     $FileDate = Get-Date -Format _yyyy_MM_dd
-    $FileName = "\\bn1mincosmih503\e$\ArcSight\data\RuntimeStatus\$Server$FileDate.csv"
+    $FileName = "\\machinename\e$\WEC\data\RuntimeStatus\$Server$FileDate.csv"
     $Results | Export-Csv -NoTypeInformation -Path $FileName
